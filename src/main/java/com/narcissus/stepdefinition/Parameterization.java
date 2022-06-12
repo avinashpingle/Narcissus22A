@@ -5,13 +5,12 @@ import io.cucumber.java.en.Then;
 
 public class Parameterization {
 	String fruite;
-	
-	
+
 	@Given("I have two {string}")
-	public void takAFruite(String fruite) {
+	public void acceptFruite(String fruite) {
 		this.fruite = fruite;
 	}
-	
+
 	@Then("print their color")
 	public void printColor() {
 		if(fruite.equalsIgnoreCase("oranges")) {
